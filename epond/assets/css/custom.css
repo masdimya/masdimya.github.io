@@ -1,0 +1,35 @@
+/**
+ *
+ * You can write your CSS code here, DO NOT touch the default JavaScript file
+ * because it will make it harder for you to update.
+ * 
+ */
+
+/*# sourceMappingURL=custom.css.map */
+
+.small-box {
+  .border-radius(2px);
+  position: relative;
+  display: block;
+  margin-bottom: 60px;
+  box-shadow: @box-boxshadow;
+  // content wrapper
+  > .inner {
+    padding: 10px;
+  }
+
+  > .small-box-footer {
+    position: relative;
+    text-align: center;
+    padding: 3px 0;
+    color: #fff;
+    color: rgba(255, 255, 255, 0.8);
+    display: block;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    &:hover {
+      color: #fff;
+      background: rgba(0, 0, 0, 0.15);
+    }
+  }
