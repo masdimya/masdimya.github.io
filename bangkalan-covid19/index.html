@@ -5,209 +5,24 @@
     <meta charset="utf-8">
     <title>COVID-19 BANGKALAN MAP</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
-
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"
         charset="utf-8"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js" charset="utf-8"></script>
-    <script src="js/bootstrap/bootstrap.min.js"></script>
+
     <script src="js/jquery.mapael.js" charset="utf-8"></script>
     <script src="js/bangkalan_new.js" charset="utf-8"></script>
+    <script src="js/setup_map.js"     charset="utf-8"></script>
     <script src="js/data.js"></script>
-    <script type="text/javascript">
-        $(function () {
-            $(".mapcontainer").mapael({
-                map: {
-                    // Set the name of the map to display
-                    name: "bangkalan",
-                    zoom: {
-                        enabled: true
-                    },
-                    defaultArea: {
-                        attrs: {
-                            fill: "#002255",
-                            stroke: "#99c7ff",
-                            cursor: "pointer"
-                        },
-                        attrsHover: {
-                            fill: "#FF0066",
-                            animDuration: 0
-                        },
-                        text: {
-                            attrs: {
-                                cursor: "pointer",
-                                "font-size": 10,
-                                fill: "#000"
-                            },
-                            attrsHover: {
-                                animDuration: 0
-                            }
-                        },
-                        eventHandlers: {
-                            click: function (e, id, mapElem, textElem) {
-                                var newData = {
-                                    'areas': {}
-                                };
-                                $(".mapcontainer").trigger('zoom', {area: id});
-                            },
-                        }
-                    }
-                },
-                areas: {
-                    "arosbaya": {
-                        value: "2617939",
-                        href: "#",
-                        tooltip: {
-                            content: popover("arosbaya")
-                        }
-                    },
-                    "bangkalan": {
-                        value: "2617939",
-                        href: "#",
-                        tooltip: {
-                            content: popover("bangkalan")
-                        }
-                    },
-                    "blega": {
-                        value: "2617939",
-                        href: "#",
-                        tooltip: {
-                            content: popover("blega")
-                        }
-                    },
-                    "burneh": {
-                        value: "2617939",
-                        href: "#",
-                        tooltip: {
-                            content: popover("burneh")
-                        }
-                    },
-                    "galis": {
-                        value: "2617939",
-                        href: "#",
-                        tooltip: {
-                            content: popover("galis")
-                        }
-                    },
-                    "geger": {
-                        value: "2617939",
-                        href: "#",
-                        tooltip: {
-                            content: popover("geger")
-                        }
-                    },
-                    "kamal": {
-                        value: "2617939",
-                        href: "#",
-                        tooltip: {
-                            content: popover("kamal")
-                        }
-                    },
-                    "klampis": {
-                        value: "2617939",
-                        href: "#",
-                        tooltip: {
-                            content: popover("klampis")
-                        }
-                    },
-                    "kokop": {
-                        value: "2617939",
-                        href: "#",
-                        tooltip: {
-                            content: popover("kokop")
-                        }
-                    },
-                    "konang": {
-                        value: "2617939",
-                        href: "#",
-                        tooltip: {
-                            content: popover("konang")
-                        }
-                    },
-                    "kwanyar": {
-                        value: "2617939",
-                        href: "#",
-                        tooltip: {
-                            content: popover("kwanyar")
-                        }
-                    },
-                    "labang": {
-                        value: "2617939",
-                        href: "#",
-                        tooltip: {
-                            content: popover("labang")
-                        }
-                    },
-                    "modung": {
-                        value: "2617939",
-                        href: "#",
-                        tooltip: {
-                            content: popover("modung")
-                        }
-                    },
-                    "sepuluh": {
-                        value: "2617939",
-                        href: "#",
-                        tooltip: {
-                            content: popover("sepuluh")
-                        }
-                    },
-                    "socah": {
-                        value: "2617939",
-                        href: "#",
-                        tooltip: {
-                            content: popover("socah")
-                        }
-                    },
-                    "tanah_merah": {
-                        value: "2617939",
-                        href: "#",
-                        tooltip: {
-                            content: popover("tanah_merah")
-                        }
-                    },
-                    "tanjung_bumi": {
-                        value: "2617939",
-                        href: "#",
-                        tooltip: {
-                            content: popover("tanjung_bumi")
-                        }
-                    },
-                    "tragah": {
-                        value: "2617939",
-                        href: "#",
-                        tooltip: {
-                            content: popover("tragah")
-                        }
-                    },
-                }
-
-            });
-
-            $('.mapcontainer').on('dbclick', function () {
-                console.log("asdas");
-                
-            });
-        });
-
-        function popover(name) {
-            return '<div class="title">' + name.replace("_"," ").toUpperCase() + '</div>\
-                    <div class="odr"> <span class="icon"></span> ODR : '+data.kecamatan[name]['odr']+' </div>\
-                    <div class="odp"> <span class="icon"></span> ODP : '+data.kecamatan[name]['odp']+' </div>\
-                    <div class="pdp"> <span class="icon"></span> PDP : '+data.kecamatan[name]['pdp']+' </div>';
-
-        };
-    </script>
 
 </head>
 
 <body>
     <div class="header">
         <h1>PETA SEBARAN COVID-19 KABUPATEN BANGKALAN</h1>
-        <h3>Update Data 31 Maret 2020</h3>
-        <h5>created by citizen</h5>
+        <h3 id="dateUpdate"></h3>
         <div class="bulat"></div>
     </div>
     <div class="container">
@@ -219,10 +34,17 @@
     </div>
 
     <div class="footer">
-        <a href="https://jv.wikipedia.org/wiki/Gambar:Indonesia_Bangkalan_Regency_location_map.svg"> Sumber Peta</a>
-        <a href="https://www.instagram.com/p/B-YwLroD-LK/?utm_source=ig_web_copy_link">Sumber Data</a>
+        <a href="https://jv.wikipedia.org/wiki/Gambar:Indonesia_Bangkalan_Regency_location_map.svg"> <span>Sumber Peta</span></a>
+        <a href="https://www.instagram.com/p/B-YwLroD-LK/?utm_source=ig_web_copy_link"> <span>Sumber Data</span></a>
     </div>
 
 </body>
 
+<script type="text/javascript">
+    $( document ).ready(function() {
+        $('#dateUpdate').text("Diupdate tanggal : " + data.update);
+    });
+
+    
+</script>
 </html>

@@ -10,7 +10,6 @@ body {
 h1 {
     font-size: 30px;
     margin: auto;
-    margin-top: 50px;
 }
 
 .container {
@@ -18,7 +17,7 @@ h1 {
     margin: auto;
 }
 .mapael .map {
-    background-color: #00112B;
+    background-color: #96d1cd;
     margin-bottom: 10px;
     position: relative;
     border-radius: 5%;
@@ -109,6 +108,4 @@ h1 {
     font-size: 20px;
     text-align: center;
 }
-
-
 

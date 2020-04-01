@@ -1,7 +1,8 @@
 var data = {
+    "update":"1 April 2020",
     "total":{
-        "odr":5314,
-        "odp":223,
+        "odr":6769,
+        "odp":258,
         "pdp":0,
         "positif":0,
         "sembuh":0,
@@ -9,72 +10,72 @@ var data = {
     },
     "kecamatan":{
         "arosbaya": {
-            "odr":6,
-            "odp":172,
+            "odr":7,
+            "odp":236,
             "pdp":0,
             "positif":0,
             "sembuh":0,
             "meninggal":0
         },
         "bangkalan": {
-            "odr":2,
-            "odp":59,
+            "odr":3,
+            "odp":91,
             "pdp":0,
             "positif":0,
             "sembuh":0,
             "meninggal":0
         },
         "blega": {
-            "odr":34,
-            "odp":826,
+            "odr":39,
+            "odp":1059,
             "pdp":0,
             "positif":0,
             "sembuh":0,
             "meninggal":0
         },
         "burneh": {
-            "odr":11,
-            "odp":72,
+            "odr":13,
+            "odp":87,
             "pdp":0,
             "positif":0,
             "sembuh":0,
             "meninggal":0
         },
         "galis": {
-            "odr":27,
-            "odp":966,
+            "odr":29,
+            "odp":1132,
             "pdp":0,
             "positif":0,
             "sembuh":0,
             "meninggal":0
         },
         "geger": {
-            "odr":16,
-            "odp":237,
+            "odr":17,
+            "odp":310,
             "pdp":0,
             "positif":0,
             "sembuh":0,
             "meninggal":0
         },
         "kamal": {
-            "odr":1,
-            "odp":82,
+            "odr":2,
+            "odp":87,
             "pdp":0,
             "positif":0,
             "sembuh":0,
             "meninggal":0
         },
         "klampis": {
-            "odr":8,
-            "odp":135,
+            "odr":9,
+            "odp":151,
             "pdp":0,
             "positif":0,
             "sembuh":0,
             "meninggal":0
         },
         "kokop": {
-            "odr":18,
-            "odp":619,
+            "odr":21,
+            "odp":852,
             "pdp":0,
             "positif":0,
             "sembuh":0,
@@ -82,23 +83,23 @@ var data = {
         },
         "konang": {
             "odr":4,
-            "odp":198,
+            "odp":200,
             "pdp":0,
             "positif":0,
             "sembuh":0,
             "meninggal":0
         },
         "kwanyar": {
-            "odr":21,
-            "odp":407,
+            "odr":27,
+            "odp":578,
             "pdp":0,
             "positif":0,
             "sembuh":0,
             "meninggal":0
         },
         "labang": {
-            "odr":5,
-            "odp":104,
+            "odr":6,
+            "odp":176,
             "pdp":0,
             "positif":0,
             "sembuh":0,
@@ -106,31 +107,31 @@ var data = {
         },
         "modung": {
             "odr":12,
-            "odp":826,
+            "odp":1109,
             "pdp":0,
             "positif":0,
             "sembuh":0,
             "meninggal":0
         },
         "sepuluh": {
-            "odr":8,
-            "odp":101,
+            "odr":10,
+            "odp":110,
             "pdp":0,
             "positif":0,
             "sembuh":0,
             "meninggal":0
         },
         "socah": {
-            "odr":5,
-            "odp":100,
+            "odr":6,
+            "odp":108,
             "pdp":0,
             "positif":0,
             "sembuh":0,
             "meninggal":0
         },
         "tanah_merah": {
-            "odr":15,
-            "odp":76,
+            "odr":19,
+            "odp":89,
             "pdp":0,
             "positif":0,
             "sembuh":0,
@@ -138,15 +139,15 @@ var data = {
         },
         "tanjung_bumi": {
             "odr":5,
-            "odp":153,
+            "odp":179,
             "pdp":0,
             "positif":0,
             "sembuh":0,
             "meninggal":0
         },
         "tragah": {
-            "odr":25,
-            "odp":181,
+            "odr":29,
+            "odp":214,
             "pdp":0,
             "positif":0,
             "sembuh":0,
