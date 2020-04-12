@@ -229,16 +229,16 @@ $(function () {
 
     $('.mapcontainer').on('dbclick', function () {
         console.log("asdas");
-        
+
     });
 });
 
- 
+
 
 function popover(name) {
     return '<div class="title">' + name.replace("_"," ").toUpperCase() + '</div>\
-            <div class="odr"> <span class="icon"></span> ODR : '+data.kecamatan[name]['odr']+' </div>\
             <div class="odp"> <span class="icon"></span> ODP : '+data.kecamatan[name]['odp']+' </div>\
-            <div class="pdp"> <span class="icon"></span> PDP : '+data.kecamatan[name]['pdp']+' </div>';
+            <div class="pdp"> <span class="icon"></span> PDP : '+data.kecamatan[name]['pdp']+' </div>\
+            <div class="positif"> <span class="icon"></span> POSITIF : '+data.kecamatan[name]['positif']+' </div>';
 
 };
