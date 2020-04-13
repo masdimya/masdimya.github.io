@@ -190,7 +190,7 @@
                 Data Pesebaran Covid19 Wilayah Bangkalan
               </h6>
             </div>
-            Data Diupdate Pada : <span class="label label-danger">09 April 2020 Jam 17:30</span>
+            Data Diupdate Pada : <span id="dateUpdate" class="label label-danger"></span>
           </div>
         </div>
 
@@ -200,38 +200,13 @@
               <!-- Default panel contents -->
               <div class="panel-heading">Tabel Data Pesebaran Covid 19 Bangkalan</div>
               <div class="panel-body">
-                  <span class="label label-info">ODP : 223 Orang</span>
-                  <span class="label label-warning">PDP : 123 Orang</span>
-                  <span class="label label-danger">POSITIF : 3 Orang</span>
-                  <span class="label label-success">Sembuh : 0 Orang</span>
-                  <span class="label label-default">Meninggal : 0 Orang</span>
+                  <span id="odp" class="label label-info"></span>
+                  <span id="pdp" class="label label-warning"></span>
+                  <span id="positif" class="label label-danger"></span>
+                  <span id="sembuh" class="label label-success"></span>
+                  <span id="meninggal" class="label label-default"></span>
               </div>
-              <div class="tableFixHead">
-                <table>
-                  <thead>
-                    <tr><th>KECAMATAN</th><th>ODP</th><th>PDP</th><th>POSITIF</th><th>SEMBUH</th><th>MENINGGAL</th></tr>
-                  </thead>
-                  <tbody>
-                    <tr><td>Arosbaya</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-                    <tr><td>Bangkalan</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-                    <tr><td>Blega</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-                    <tr><td>Burneh</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-                    <tr><td>Galis</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-                    <tr><td>Geger</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-                    <tr><td>Kamal</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-                    <tr><td>Klampis</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-                    <tr><td>Kokop</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-                    <tr><td>Konang</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-                    <tr><td>Kwanyar</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-                    <tr><td>Labang</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-                    <tr><td>Modung</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-                    <tr><td>Sepulu</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-                    <tr><td>Socah</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-                    <tr><td>Tanah Merah</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-                    <tr><td>Tanjung Bumi</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-                    <tr><td>Tragah</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-                  </tbody>
-                </table>
+              <div id="tabeldata" class="tableFixHead">
               </div>
             </div>
           </div>
@@ -424,7 +399,6 @@
     </section>
   </section>
 
-
   <!-- CONTACT-->
   <section data-inpage-section="true" id="contact">
     <section class="page-section bg-color overlay-color-90 pt-140 pt-sm-100 pb-140 pb-sm-100" data-background="images/image_6.jpg">
@@ -548,11 +522,12 @@
   <script src="js/jquery.fitvids.js"></script>
   <script src="js/canvasjs/canvasjs.min.js"></script>
   <script src="js/script.js"></script>
-  <script src="js/chart.js"></script>
+  <!-- <script src="js/chart.js"></script> -->
+  <script src="js/data/home.js"></script>
 
   <script type="text/javascript">
   $(window).on("load",function(){
-    $('#myModal').modal('show');
+    // $('#myModal').modal('show');
   })
   </script>
 

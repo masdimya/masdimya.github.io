@@ -130,7 +130,7 @@
             <h2 class="heading-hero fw700 text-color mb-30 mb-sm-20">Pesebaran Covid19 Bangkalan</span>
             </h2>
             <p class="heading-medium fw400 pt-20">
-              Data Diupdate Pada : <span class="label label-danger">09 April 2020 Jam 17:30</span>
+              Data Diupdate Pada : <span id="dateUpdate" class="label label-danger"></span>
             </p>
           </div>
           <div class="col-md-3 col-sm-12">
@@ -140,19 +140,19 @@
                 <li>
                   <strong class="fw700 text-black">ODP</strong>
                   <div class="">
-                    <strong class="heading-medium fw700 text-odp">234 Orang</strong>
+                    <strong id="odp" class="heading-medium fw700 text-odp">234 Orang</strong>
                   </div>
                 </li>
                 <li>
                   <strong class="fw700 text-black">PDP</strong>
                   <div class="">
-                    <strong class="heading-medium fw700 text-pdp">123 Orang</strong>
+                    <strong id="pdp" class="heading-medium fw700 text-pdp">123 Orang</strong>
                   </div>
                 </li>
                 <li>
                   <strong class="fw700 text-black">POSITIF</strong>
                   <div class="">
-                    <strong class="heading-medium fw700 text-positif">3 Orang</strong>
+                    <strong id="positif" class="heading-medium fw700 text-positif">3 Orang</strong>
                   </div>
                 </li>
               </ul>
@@ -167,15 +167,13 @@
                 </div>
             </div>
           </div>
-
-
         </div>
         <hr>
         <div class="row">
           <div class="col-md-12 mb-10 mb-sm-10">
             <h2 class="heading-hero fw700 text-color">Data Dalam Grafik</h2>
             <p class="heading-medium fw400 pt-20">
-              Data Diupdate Pada : <span class="label label-danger">09 April 2020 Jam 17:30</span>
+              Data Diupdate Pada : <span id="dateUpdate1" class="label label-danger"></span>
             </p>
           </div>
           <div class="col-md-12 col-sm-12">
@@ -196,7 +194,7 @@
             Untuk Mengetahui Penjelasan Tentang Status Pasien Cek <a href=""> Status Pasien Covid19 </a>
             </div>
             <p class="heading-medium fw400 pt-20">
-              Data Diupdate Pada : <span class="label label-danger">09 April 2020 Jam 17:30</span>
+              Data Diupdate Pada : <span id="dateUpdate2" class="label label-danger"></span>
             </p>
           </div>
           <div class="col-md-12 col-sm-12">
@@ -204,32 +202,7 @@
               <!-- Default panel contents -->
               <div class="panel-heading">Tabel Data Pesebaran Covid19</div>
               <!-- Table -->
-              <div class="tableFixHead">
-                <table class="table table-hover">
-                  <thead>
-                    <tr><th>KECAMATAN</th><th>ODP</th><th>PDP</th><th>POSITIF</th><th>SEMBUH</th><th>MENINGGAL</th></tr>
-                  </thead>
-                  <tbody>
-                    <tr><td>Arosbaya</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-                    <tr><td>Bangkalan</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-                    <tr><td>Blega</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-                    <tr><td>Burneh</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-                    <tr><td>Galis</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-                    <tr><td>Geger</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-                    <tr><td>Kamal</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-                    <tr><td>Klampis</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-                    <tr><td>Kokop</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-                    <tr><td>Konang</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-                    <tr><td>Kwanyar</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-                    <tr><td>Labang</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-                    <tr><td>Modung</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-                    <tr><td>Sepulu</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-                    <tr><td>Socah</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-                    <tr><td>Tanah Merah</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-                    <tr><td>Tanjung Bumi</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-                    <tr><td>Tragah</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-                  </tbody>
-                </table>
+              <div id="tabeldata" class="tableFixHead">
               </div>
             </div>
             <small><a href=""> Sumber Referensi Data </a> </small>
@@ -362,7 +335,7 @@
   <script src="js/raphael.min.js" charset="utf-8"></script>
   <script src="js/canvasjs/canvasjs.min.js"></script>
   <script src="js/script.js"></script>
-  <script src="js/chart.js"></script>
+  <script src="js/data/petadata.js"></script>
   <script src="js/map-js/jquery.mapael.js" charset="utf-8"></script>
   <script src="js/map-js/bangkalan_new.js" charset="utf-8"></script>
   <script src="js/map-js/setup_map.js"     charset="utf-8"></script>

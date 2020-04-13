@@ -27,7 +27,6 @@ $(function () {
                         fill: "#ffffff",
                         animDuration: 0
                     },
-
                 },
                 eventHandlers: {
                     click: function (e, id, mapElem, textElem) {
