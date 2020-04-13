@@ -4,6 +4,10 @@ fetch("https://madcovid-webhook.herokuapp.com/data")
     document.getElementById("dateUpdate").innerHTML = data.lastupdate;
     document.getElementById("dateUpdate1").innerHTML = data.lastupdate;
     document.getElementById("dateUpdate2").innerHTML = data.lastupdate;
+    document.getElementById("sumber1").href = "https://"+data.resource;
+    document.getElementById("sumber2").href = "https://"+data.resource;
+    document.getElementById("sumber3").href = "https://"+data.resource;
+
     // console.log(data.kecamatan.arosbaya.odp);
     setTableData(data);
     setChart(data.total);
@@ -125,83 +129,81 @@ function setBarChart(data) {
   		itemclick: toggleDataSeries
   	},
   	data: [{
-  		type: "column",
-  		name: "ODP",
-  		legendText: "ODP",
-  		showInLegend: true,
-  		dataPoints:[
-  			{ label: "Arosbaya", y: kec.arosbaya.odp },
-  			{ label: "Bangkalan", y: kec.bangkalan.odp },
-  			{ label: "Blega", y: kec.blega.odp },
-  			{ label: "Burneh", y: kec.burneh.odp },
-  			{ label: "Galis", y: kec.galis.odp },
-        { label: "Geger", y: kec.geger.odp },
-  			{ label: "Kamal", y: kec.kamal.odp },
-  			{ label: "Klampis", y: kec.klampis.odp },
-  			{ label: "Kokop", y: kec.kokop.odp },
-  			{ label: "Konang", y: kec.konang.odp },
-        { label: "Kwanyar", y: kec.kwanyar.odp },
-  			{ label: "Labang", y: kec.labang.odp },
-  			{ label: "Modung", y: kec.modung.odp },
-  			{ label: "Sepulu", y: kec.sepuluh.odp },
-        { label: "Socah", y: kec.socah.odp },
-        { label: "Tanah Merah", y: kec.tanah_merah.odp },
-  			{ label: "Tanjung Bumi", y: kec.tanjung_bumi.odp },
-  			{ label: "Tragah", y: kec.tragah.odp }
-  		]
-  	},
-  	{
-  		type: "column",
+      type: "column",
+      name: "ODP",
+      legendText: "ODP",
+      showInLegend: true,
+      dataPoints:[
+        { label: "Arosbaya", y: parseInt(kec.arosbaya.odp) },
+        { label: "Bangkalan", y: parseInt(kec.bangkalan.odp) },
+        { label: "Blega", y: parseInt(kec.blega.odp) },
+        { label: "Burneh", y: parseInt(kec.burneh.odp) },
+        { label: "Galis", y: parseInt(kec.galis.odp) },
+        { label: "Geger", y: parseInt(kec.geger.odp) },
+        { label: "Kamal", y: parseInt(kec.kamal.odp) },
+        { label: "Klampis", y: parseInt(kec.klampis.odp) },
+        { label: "Kokop", y: parseInt(kec.kokop.odp) },
+        { label: "Konang", y: parseInt(kec.konang.odp) },
+        { label: "Kwanyar", y: parseInt(kec.kwanyar.odp) },
+        { label: "Labang", y: parseInt(kec.labang.odp) },
+        { label: "Modung", y: parseInt(kec.modung.odp) },
+        { label: "Sepulu", y: parseInt(kec.sepuluh.odp) },
+        { label: "Socah", y: parseInt(kec.socah.odp) },
+        { label: "Tanah Merah", y: parseInt(kec.tanah_merah.odp) },
+        { label: "Tanjung Bumi", y: parseInt(kec.tanjung_bumi.odp) },
+        { label: "Tragah", y: parseInt(kec.tragah.odp) }
+      ]
+    },
+    {	type: "column",
   		name: "PDP",
   		legendText: "PDP",
   		showInLegend: true,
-      dataPoints:[
-        { label: "Arosbaya", y: kec.arosbaya.pdp },
-        { label: "Bangkalan", y: kec.bangkalan.pdp },
-        { label: "Blega", y: kec.blega.pdp },
-        { label: "Burneh", y: kec.burneh.pdp },
-        { label: "Galis", y: kec.galis.pdp },
-        { label: "Geger", y: kec.geger.pdp },
-        { label: "Kamal", y: kec.kamal.pdp },
-        { label: "Klampis", y: kec.klampis.pdp },
-        { label: "Kokop", y: kec.kokop.pdp },
-        { label: "Konang", y: kec.konang.pdp },
-        { label: "Kwanyar", y: kec.kwanyar.pdp },
-        { label: "Labang", y: kec.labang.pdp },
-        { label: "Modung", y: kec.modung.pdp },
-        { label: "Sepulu", y: kec.sepuluh.pdp },
-        { label: "Socah", y: kec.socah.pdp },
-        { label: "Tanah Merah", y: kec.tanah_merah.pdp },
-        { label: "Tanjung Bumi", y: kec.tanjung_bumi.pdp },
-        { label: "Tragah", y: kec.tragah.pdp }
+  		dataPoints:[
+  			{ label: "Arosbaya", y: parseInt(kec.arosbaya.pdp) },
+  			{ label: "Bangkalan", y: parseInt(kec.bangkalan.pdp) },
+  			{ label: "Blega", y: parseInt(kec.blega.pdp) },
+  			{ label: "Burneh", y: parseInt(kec.burneh.pdp) },
+  			{ label: "Galis", y: parseInt(kec.galis.pdp) },
+        { label: "Geger", y: parseInt(kec.geger.pdp) },
+  			{ label: "Kamal", y: parseInt(kec.kamal.pdp) },
+  			{ label: "Klampis", y: parseInt(kec.klampis.pdp) },
+  			{ label: "Kokop", y: parseInt(kec.kokop.pdp) },
+  			{ label: "Konang", y: parseInt(kec.konang.pdp) },
+        { label: "Kwanyar", y: parseInt(kec.kwanyar.pdp) },
+  			{ label: "Labang", y: parseInt(kec.labang.pdp) },
+  			{ label: "Modung", y: parseInt(kec.modung.pdp) },
+  			{ label: "Sepulu", y: parseInt(kec.sepuluh.pdp) },
+        { label: "Socah", y: parseInt(kec.socah.pdp) },
+        { label: "Tanah Merah", y: parseInt(kec.tanah_merah.pdp) },
+  			{ label: "Tanjung Bumi", y: parseInt(kec.tanjung_bumi.pdp) },
+  			{ label: "Tragah", y: parseInt(kec.tragah.pdp) }
   		]
   	},
-    {
-      type: "column",
-      name: "CONFIRM",
-      legendText: "CONFIRM/POSITIF",
-      showInLegend: true,
-      dataPoints:[
-        { label: "Arosbaya", y: kec.arosbaya.positif },
-  			{ label: "Bangkalan", y: kec.bangkalan.positif },
-  			{ label: "Blega", y: kec.blega.positif },
-  			{ label: "Burneh", y: kec.burneh.positif },
-  			{ label: "Galis", y: kec.galis.positif },
-        { label: "Geger", y: kec.geger.positif },
-  			{ label: "Kamal", y: kec.kamal.positif },
-  			{ label: "Klampis", y: kec.klampis.positif },
-  			{ label: "Kokop", y: kec.kokop.positif },
-  			{ label: "Konang", y: kec.konang.positif },
-        { label: "Kwanyar", y: kec.kwanyar.positif },
-  			{ label: "Labang", y: kec.labang.positif },
-  			{ label: "Modung", y: kec.modung.positif },
-  			{ label: "Sepulu", y: kec.sepuluh.positif },
-        { label: "Socah", y: kec.socah.positif },
-        { label: "Tanah Merah", y: kec.tanah_merah.positif },
-  			{ label: "Tanjung Bumi", y: kec.tanjung_bumi.positif },
-  			{ label: "Tragah", y: kec.tragah.positif }
+    { type: "column",
+  		name: "POSITIF",
+  		legendText: "POSITIF",
+  		showInLegend: true,
+  		dataPoints:[
+  			{ label: "Arosbaya", y: parseInt(kec.arosbaya.positif) },
+  			{ label: "Bangkalan", y: parseInt(kec.bangkalan.positif) },
+  			{ label: "Blega", y: parseInt(kec.blega.positif) },
+  			{ label: "Burneh", y: parseInt(kec.burneh.positif) },
+  			{ label: "Galis", y: parseInt(kec.galis.positif) },
+        { label: "Geger", y: parseInt(kec.geger.positif) },
+  			{ label: "Kamal", y: parseInt(kec.kamal.positif) },
+  			{ label: "Klampis", y: parseInt(kec.klampis.positif) },
+  			{ label: "Kokop", y: parseInt(kec.kokop.positif) },
+  			{ label: "Konang", y: parseInt(kec.konang.positif) },
+        { label: "Kwanyar", y: parseInt(kec.kwanyar.positif) },
+  			{ label: "Labang", y: parseInt(kec.labang.positif) },
+  			{ label: "Modung", y: parseInt(kec.modung.positif) },
+  			{ label: "Sepulu", y: parseInt(kec.sepuluh.positif) },
+        { label: "Socah", y: parseInt(kec.socah.positif) },
+        { label: "Tanah Merah", y: parseInt(kec.tanah_merah.positif) },
+  			{ label: "Tanjung Bumi", y: parseInt(kec.tanjung_bumi.positif) },
+  			{ label: "Tragah", y: parseInt(kec.tragah.positif) }
   		]
-    }]
+  	}]
   });
   chart.render();
 }

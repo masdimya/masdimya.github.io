@@ -2,6 +2,7 @@ fetch("https://madcovid-webhook.herokuapp.com/data")
   .then((resp) => resp.json())
   .then(function(data) {
     document.getElementById("dateUpdate").innerHTML = data.lastupdate;
+    document.getElementById("sumber").href = "https://"+data.resource;
     setTableData(data);
     setChart(data.total);
   });
