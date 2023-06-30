@@ -1,13 +1,25 @@
 # Site settings ...
-uri: domain.com
-url: https://domain.com
-name: Your name
-title: Mangan Jekyll Theme
-email: example@domain.com
-author: username
-keywords: "Your, Keyword, Here"
-description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione nihil, velit odio quia autem quos. Natus itaque sint, nisi fuga dolorum. Iste ea cumque, aliquam dignissimos vitae labore atque minima?"
-social_username: username
+uri: masdimya.me
+url: https://masdimya.me
+name: masdimya
+title: Welcome to my site | masdimya
+email: dimas6597@gmail.com
+author: Masdimya
+template: Mangan
+template_src: https://github.com/dikiaap/mangan
+keywords: "software engineer, masdimya, dimas"
+description: "I'm <b>Dimas Ikbalul Aulia</b>. Currently work as <b> Web Developer </b> at 
+  <b><a href=\"https://www.elnusa.co.id/\" target=\"_blank\">🏢 Elnusa, Jakarta</a></b>
+  and also taking up <b>freelance projects</b>. 
+  My primary focus in <b>backend technologies</b>, and I have a keen interest in <b>software architecture</b>. 
+  <br>
+  <br>
+  Throughout my career, I have worked extensively with popular technologies such as <b>Node.js, Vue.js, Laravel, PostgreSQL, and Redis</b>. 
+  <br>
+  <br>
+  If you have any questions, collaboration ideas, or exciting projects, feel free to get in touch. Reach me on <b><a href=\"/contact\" >contacts </a><b>
+  "
+social_username: masdimya
 
 # Build settings ...
 sass:
